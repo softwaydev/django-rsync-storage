@@ -5,7 +5,7 @@ from django.core.files.storage import FileSystemStorage
 from django.conf import settings
 
 import os
-from tasks import rsync_task
+from .tasks import rsync_task
 CURRENT_HOST = 'current'
 
 

@@ -2,7 +2,7 @@
 import os
 from celery.task import task
 import subprocess
-import pid
+from . import pid
 
 RSYNC_PID_PATH = '/tmp/rsync_task.pid'
 

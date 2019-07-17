@@ -1,1 +1,1 @@
-from rsync import RSyncStorage
+from .rsync import RSyncStorage

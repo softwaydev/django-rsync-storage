@@ -23,8 +23,6 @@ def _copy_to_remote_host(dir_from, remote_dir_to):
                     os.unlink(RSYNC_PID_PATH)
     except OSError as ex:
         return False
-    if res_code != 0:
-        return False
     return True
 
 @task(ignore_result=False, time_limit=300)
